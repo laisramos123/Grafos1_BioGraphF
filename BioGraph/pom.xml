@@ -11,8 +11,13 @@
 	<groupId>com.example</groupId>
 	<artifactId>BioGraph</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
 	<name>BioGraph</name>
 	<description>BioGraph</description>
+	<modules>
+		<module>backend</module>
+		<module>frontend</module>
+	</modules>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
