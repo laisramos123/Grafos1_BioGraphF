@@ -4,8 +4,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import {MatSelectModule} from '@angular/material/select';
-
+import { MatSelectModule } from '@angular/material/select';
+import { GrafoService } from './grafo.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import {MatSelectModule} from '@angular/material/select';
     MatToolbarModule,
     MatSelectModule
   ],
-  providers: [],
+  providers: [GrafoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
