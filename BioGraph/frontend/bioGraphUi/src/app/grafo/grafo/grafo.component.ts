@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Grafo } from '../model/grafo';
 import { Animal } from './animal';
+import { AnimalService } from 'src/app/animal.service';
 
 @Component({
   selector: 'app-grafo',
@@ -12,32 +13,11 @@ export class GrafoComponent implements OnInit {
   animal: any
   animais: any
 
-  constructor() {
-    this.animais=[
-    {
-      "id":1,
-      "nome":"grama"
-    },
-    {
-      "id":2,
-      "nome":"Gazela"
-    },
-    {
-      "id":3,
-      "nome":"Zebra"
-    },
-    {
-      "id":4,
-      "nome":"Leão"
-    },
-    {
-      "id":5,
-      "nome":"Cheta"
-    }      
-    ]
-  //  this.grafos = service.getAnimais();
+  constructor(service: AnimalService) {
+    this.animais=service.getAnimal();
   }
 
   ngOnInit(): void {
+    this.animais=this.animal.service.getAnimal();
   }
 }
