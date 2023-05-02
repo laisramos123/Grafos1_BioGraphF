@@ -8,6 +8,22 @@ public class RelacionamentoAlimentar {
             this.origem = origem;
             this.destino = destino;
         }
+
+    public int getDestino() {
+        return destino;
     }
+
+    public int getOrigem() {
+        return origem;
+    }
+
+    public void setOrigem(int origem) {
+        this.origem = origem;
+    }
+
+    public void setDestino(int destino) {
+        this.destino = destino;
+    }
+}
 
 
