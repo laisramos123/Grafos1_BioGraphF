@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSelectModule } from '@angular/material/select';
-import { GrafoService } from './grafo.service';
+import { AnimalService } from './animal.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import { GrafoService } from './grafo.service';
     MatToolbarModule,
     MatSelectModule
   ],
-  providers: [GrafoService],
+  providers: [AnimalService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
